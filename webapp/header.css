@@ -1,0 +1,79 @@
+header {
+    display: flex;
+    height: 12vh;
+    width: 100vw;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    /* min-height: px; */
+    background-color: rgb(218, 225, 228);
+    font-size: 2vmax; 
+}
+
+
+.player, .score {
+    height:80%;
+    margin: 5%;
+    padding: 0;
+    /* background-color: red; */
+    background-color: rgb(218, 225, 228);     
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.player {
+    width: 35%;
+}
+
+.score {
+    width: 20%;
+    cursor: pointer;
+}
+
+.points-you, .points-computer {
+    font-weight:bold;
+    padding-right: 20%;
+    padding-left: 20%;  
+}
+
+.points-computer {
+    border-right-color: black ;
+    border-right-width: 1px;
+    border-right-style: solid ;
+}
+
+.points-you {
+    border-left-color: black ;
+    border-left-width: 1px;
+    border-left-style: solid ;
+}
+
+.player-name {
+    color: black;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    
+}
+
+.player-icon {
+    width: 30%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.player-icon-img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    filter: grayscale(100%);
+}
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Tic Tac Toe</title>
+    
+    <link rel="stylesheet" href="tictactoe.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
+    
+
+
+
+
+</head>
+<body>
+    <header>
+        <div class="player">
+            <div class="player-icon">
+                <img class="player-icon-img" src="https://cdn1.iconfinder.com/data/icons/artificial-intelligence-1-outline/300/desktop-512.png">
+            </div>
+            <p class="player-name" style="padding-left: 10%;">COMPUTER</p>
+        </div>
+        <div class="score">
+            <p class="points-computer">0</p>
+            <p class="points-you">0</p>
+        </div>
+        <div class="player">
+            <p class="player-name">YOU</p>
+            <div class="player-icon">
+                <img class="player-icon-img" src="https://d3sxshmncs10te.cloudfront.net/icon/premium/png-512/1259469.png?token=eyJhbGciOiJoczI1NiIsImtpZCI6ImRlZmF1bHQifQ__.eyJpc3MiOiJkM3N4c2htbmNzMTB0ZS5jbG91ZGZyb250Lm5ldCIsImV4cCI6MTcxNTkzODgzOSwicSI6bnVsbCwiaWF0IjoxNzE1Njc5NjM5fQ__.891817b6a0a8a17648b104e2f68bcd228d90e789a54c5faf25f2c0c393168c47">
+            </div>  
+        </div>
+    </header>
+    <div>
+        <button class="instruction-bnt">
+            <img class="help-icon" src="https://cdn-icons-png.freepik.com/256/906/906794.png?semt=ais_hybrid">
+        </button>
+        <p class="help-text help-text-on">
+            You think that you stand a chance against a computer! <br>
+            One point for every win, no points for ties. <br>
+            Let the game beggin! <br>
+            To reset score press the scoreboard
+        </p>
+    </div>
+    <main>
+        <div class="game-board">
+            <div class="board-box hover-cursor" id="id-0">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Letter_x.svg/65px-Letter_x.svg.png?20200316110455" class="x">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Greek_Omicron_04.svg/800px-Greek_Omicron_04.svg.png" class="o">
+            </div>
+            <div class="board-box hover-cursor" id="id-1">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Letter_x.svg/65px-Letter_x.svg.png?20200316110455" class="x">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Greek_Omicron_04.svg/800px-Greek_Omicron_04.svg.png" class="o">
+            </div>
+            <div class="board-box hover-cursor" id="id-2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Letter_x.svg/65px-Letter_x.svg.png?20200316110455" class="x">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Greek_Omicron_04.svg/800px-Greek_Omicron_04.svg.png" class="o">
+            </div>
+            <div class="board-box hover-cursor" id="id-3">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Letter_x.svg/65px-Letter_x.svg.png?20200316110455" class="x">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Greek_Omicron_04.svg/800px-Greek_Omicron_04.svg.png" class="o">
+            </div>
+            <div class="board-box hover-cursor" id="id-4">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Letter_x.svg/65px-Letter_x.svg.png?20200316110455" class="x">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Greek_Omicron_04.svg/800px-Greek_Omicron_04.svg.png" class="o">
+            </div>
+            <div class="board-box hover-cursor" id="id-5">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Letter_x.svg/65px-Letter_x.svg.png?20200316110455" class="x">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Greek_Omicron_04.svg/800px-Greek_Omicron_04.svg.png" class="o">
+            </div>
+            <div class="board-box hover-cursor" id="id-6">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Letter_x.svg/65px-Letter_x.svg.png?20200316110455" class="x">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Greek_Omicron_04.svg/800px-Greek_Omicron_04.svg.png" class="o">
+            </div>
+            <div class="board-box hover-cursor" id="id-7">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Letter_x.svg/65px-Letter_x.svg.png?20200316110455" class="x">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Greek_Omicron_04.svg/800px-Greek_Omicron_04.svg.png" class="o">
+            </div>
+            <div class="board-box hover-cursor" id="id-8">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Letter_x.svg/65px-Letter_x.svg.png?20200316110455" class="x">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Greek_Omicron_04.svg/800px-Greek_Omicron_04.svg.png" class="o">
+            </div>
+        </div>
+    </main>
+    
+    <!-- this file loads the tree by just putting it in a variable eleminating the need of a server else can be done with fetch -->
+    <script src="load.js"></script>
+
+    <script src="tictactoe.js"></script>
+
+</body>
+</html>
